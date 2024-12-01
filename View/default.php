@@ -4,9 +4,9 @@ include_once "header.php" ?>
     <?php
     if(isset($page)) {
     if($page == 'home')
-    require("./View/home.php");
+        require("./View/home.php");
     else
-    require("./View/".$page.".php");
+        require("./View/".$page.".php");
     }
     ?>
 </section>
