@@ -19,19 +19,19 @@ class userController {
 
     public function doLogin() {
         $this->user = new User();
-        // Cette action teste l'existence d'un utilisateur de email $_POST['email'] 
-        // et de password $_POST['password']
-        // Le user extrait par le UserManager est renvoyé dans $result
         
-        $result = //_____; // Cette ligne est à compléter selon le TP
+        $this->user->setEmail($_POST['email']);
+        $this->user->setPassword(sha1($_POST['password']));
+        $result = $this->userManager->login($this->user);
         
-        if ($result) :
+        if ($result) {
             $info = "Connexion reussie";
             $_SESSION['user'] = $result;
             $page = 'home';
-        else :
+        } else {
             $info = "Identifiants incorrects.";
-        endif;
+            $page = 'login';
+        }
         require('./View/default.php');
     }
 }
