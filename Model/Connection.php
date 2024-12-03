@@ -1,9 +1,12 @@
 <?php
 class Connection {
-    private $host = 'np16029-001.privatesql:35815';
+    //private $host = 'np16029-001.privatesql:35815';
+    private $host = 'localhost';
     private $dbname = 'licence22';
-    private $username = 'licence22';
-    private $password = 'vWf69iPJZJp'; //// mot de passe fourni que je ne partage pas
+    //private $username = 'licence22';
+    private $username = 'root';
+    //private $password = 'vWf69iPJZJp'; //// mot de passe fourni que je ne partage pas
+    private $password = '';
     private $db;
 
     public function __construct() {
