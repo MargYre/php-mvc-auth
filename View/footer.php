@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<body>
+// View/footer.php
+    </div>
     <footer>
-        <p>footer</p>
+        <p>TP MVC User Authentication © <?php echo date('Y'); ?></p>
     </footer>
 </body>
+</html>

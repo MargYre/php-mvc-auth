@@ -1,5 +1,5 @@
 <!-- Controller/userController.class.php -->
-<!-- -->
+<!--  -->
 <?php
 class userController {
     private $userManager;
@@ -33,5 +33,11 @@ class userController {
             $page = 'login';
         }
         require('./View/default.php');
+    }
+    public function logout() {
+        unset($_SESSION['user']);
+        session_destroy();
+        header('Location: index.php');
+        exit();
     }
 }
