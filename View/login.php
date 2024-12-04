@@ -1,4 +1,4 @@
-// View/login.php
+<!-- View/login.php -->
 <div class="form wrapper-50 margin-auto">
     <h2 class="center">Connexion</h2>
 
@@ -23,4 +23,7 @@
             <button type="submit" class="submit-btn">Se connecter</button>
         </div>
     </form>
+    <div class="create-account">
+        You don't have an account ? <a href="index.php?ctrl=user&action=create">Create one</a> !
+    </div>
 </div>
