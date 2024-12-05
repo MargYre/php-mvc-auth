@@ -1,7 +1,7 @@
 <!-- View/footer.php-->
     </div>
     <footer>
-        <p>// View/header.php
+        <p>
 <!DOCTYPE html>
 <html>
 <head>

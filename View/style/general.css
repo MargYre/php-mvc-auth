@@ -159,3 +159,10 @@ option, select{
 	text-align: center;
 	margin-top: 20px;
 }
+
+.centered-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

@@ -14,7 +14,7 @@ class userController {
     
     public function login() {
         $page = 'login';
-        require('./View/default.php');
+        require('./View/login.php');
     }
 
     public function doLogin() {
@@ -42,8 +42,7 @@ class userController {
     }
 
     public function create() {
-        $page = 'createAccount';
-        require('./View/default.php');
+        require('./View/createAccount.php');
     }
 
     public function doCreate() {
