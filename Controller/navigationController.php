@@ -22,11 +22,11 @@ class NavigationController {
     }
     
     // Pages nécessitant une authentification
-    public function users() {
+    /*public function users() {
         $this->checkAuthentication();
         $page = 'usersList';  // utilise votre vue existante
         require('./View/default.php');
-    }
+    }*/
     
     public function memory() {
         $this->checkAuthentication();
